@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ws="https://schemas.elecho.dev/wpfsuite"
-        ws:WindowOption.Backdrop="Acrylic"
+
         ws:WindowOption.Corner="Round"
         xmlns:local="clr-namespace:Mibar"
         mc:Ignorable="d"
@@ -15,31 +15,7 @@
         Foreground="Transparent"
         AllowDrop="True"
         Visibility="Visible">
-    <Window.Resources>
-        <!-- 定义淡入动画 -->
-        <Storyboard x:Key="FadeIn">
-            <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                             From="0" To="1" Duration="0:0:2"/>
-        </Storyboard>
-
-        <!-- 定义淡出动画 -->
-        <Storyboard x:Key="FadeOut">
-            <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                             From="0" To="1" Duration="0:0:2"
-                             Completed="OnFadeOutCompleted"/>
-        </Storyboard>
-    </Window.Resources>
-    <Grid Background="Transparent">
-        <Rectangle x:Name="myRectangle"
-                Fill="Transparent">
-            <Rectangle.Clip>
-                <RectangleGeometry x:Name="rectGeometry"
-                        RadiusX="20"
-                        RadiusY="20"/>
-            </Rectangle.Clip>
-            <Rectangle.Effect>
-                <BlurEffect Radius="180"/>
-            </Rectangle.Effect>
-        </Rectangle>
+            <!-- ws:WindowOption.Backdrop="Acrylic" -->
+    <Grid Background="White" Opacity="0.1">
     </Grid>
 </Window>

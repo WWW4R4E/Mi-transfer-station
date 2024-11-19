@@ -2,15 +2,68 @@
 using SharpHook;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 
 namespace Mibar
 {
     public partial class MainWindow : Window
     {
+        /*定义一些结构体和枚举来与 Windows API 进行交互
+        ACCENTPOLICY: 描述了亚克力效果的状态和其他属性。
+        AccentState: 表示亚克力效果的状态，例如启用或禁用。
+        AccentFlags: 其他标志，通常设为 0。
+        GradientColor: 设置亚克力效果的颜色和不透明度，格式为 ARGB。
+        AnimationId: 动画标识符，通常设为 0。
+        WINDOWCOMPOSITIONATTRIBDATA: 包含要设置的属性及其数据。
+        Attribute: 要设置的属性类型，这里设置为 WCA_ACCENT_POLICY。
+        Data: 指向包含属性数据的指针。
+        SizeOfData: 数据的大小。
+        WindowCompositionAttribute: 定义了不同的窗口组合属性。
+        WCA_ACCENT_POLICY: 表示亚克力效果策略。
+        AccentState: 定义了不同的亚克力效果状态。
+        ACCENT_DISABLE: 禁用亚克力效果。
+        ACCENT_ENABLE_GRADIENT: 启用渐变效果。
+        ACCENT_ENABLE_TRANSPARENTGRADIENT: 启用透明渐变效果。
+        ACCENT_ENABLE_BLURBEHIND: 启用模糊效果。
+        ACCENT_INVALID_STATE: 无效状态。
+        */
+        [StructLayout(LayoutKind.Sequential)]
+        private struct ACCENTPOLICY
+        {
+            public uint AccentState;
+            public int AccentFlags;
+            public uint GradientColor;
+            public int AnimationId;
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        private struct WINDOWCOMPOSITIONATTRIBDATA
+        {
+            public WindowCompositionAttribute Attribute;
+            public IntPtr Data;
+            public int SizeOfData;
+        }
+
+        private enum WindowCompositionAttribute
+        {
+            WCA_ACCENT_POLICY = 19
+        }
+
+        private enum AccentState
+        {
+            ACCENT_DISABLED = 0,
+            ACCENT_ENABLE_GRADIENT = 1,
+            ACCENT_ENABLE_TRANSPARENTGRADIENT = 2,
+            ACCENT_ENABLE_BLURBEHIND = 3,
+            ACCENT_INVALID_STATE = 4
+        }
+
+        [DllImport("user32.dll")]
+        private static extern int SetWindowCompositionAttribute(IntPtr hwnd, ref WINDOWCOMPOSITIONATTRIBDATA data);
+
         private readonly TaskPoolGlobalHook hook; // 全局钩子对象
 
         public MainWindow()
@@ -36,15 +89,13 @@ namespace Mibar
                     // 使用 Dispatcher 确保在 UI 线程上更新 Visibility
                     Dispatcher.Invoke(() =>
                     {
-                        // 开始淡入动画
-                        // BeginStoryboard((Storyboard)FindResource("FadeIn"));
                         Debug.WriteLine("移动到上方了，visible!");
 
                         // 鼠标拖动文件位于屏幕顶部时显示窗口
                         Visibility = Visibility.Visible;
-                        
+
                         // 启用WPF拖放事件
-                        //AllowDrop = true;
+                        AllowDrop = true;
                         DragEnter += MainWindow_DragEnter;
                         Drop += MainWindow_Drop;
                     });
@@ -53,15 +104,13 @@ namespace Mibar
                 {
                     Dispatcher.Invoke(() =>
                     {
-                        // 开始淡出动画
-                        // BeginStoryboard((Storyboard)FindResource("FadeOut"));
                         Debug.WriteLine("离开了，hidden");
 
                         // 鼠标离开屏幕顶部时隐藏窗口
                         Visibility = Visibility.Collapsed;
 
                         // 禁用WPF拖放事件
-                        //AllowDrop = false;
+                        AllowDrop = false;
                         DragEnter -= MainWindow_DragEnter;
                         Drop -= MainWindow_Drop;
                     });
@@ -72,7 +121,7 @@ namespace Mibar
             hook.Run();
 
             // 默认禁用拖放事件
-            //AllowDrop = false;
+            AllowDrop = false;
         }
 
         // 读取注册表获取是否为深色模式
@@ -119,8 +168,31 @@ namespace Mibar
             Left = (screenWidth - Width) / 2;
             Top = 0;
 
+            // 设置窗口亚力克效果
+            EnableAcrylicEffect();
+
             // 设置初始状态为隐藏
             Visibility = Visibility.Collapsed;
+        }
+
+        private void EnableAcrylicEffect()
+        {
+            var accent = new ACCENTPOLICY();
+            accent.AccentState = (uint)AccentState.ACCENT_ENABLE_BLURBEHIND;
+            accent.GradientColor = 0x99FFFFFF; // ARGB for 60% opacity white
+
+            var accentStructSize = Marshal.SizeOf(accent);
+            var accentPtr = Marshal.AllocHGlobal(accentStructSize);
+            Marshal.StructureToPtr(accent, accentPtr, false);
+
+            var data = new WINDOWCOMPOSITIONATTRIBDATA();
+            data.Attribute = WindowCompositionAttribute.WCA_ACCENT_POLICY;
+            data.Data = accentPtr;
+            data.SizeOfData = accentStructSize;
+
+            SetWindowCompositionAttribute(new System.Windows.Interop.WindowInteropHelper(this).Handle, ref data);
+
+            Marshal.FreeHGlobal(accentPtr);
         }
 
         private void MainWindow_DragEnter(object sender, DragEventArgs e)
@@ -128,11 +200,11 @@ namespace Mibar
             // 检查拖入的数据是否是文件列表
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
-                e.Effects = DragDropEffects.Copy; // 允许拖放
+                e.Effects = DragDropEffects.Copy;
             }
             else
             {
-                e.Effects = DragDropEffects.None; // 不允许拖放
+                e.Effects = DragDropEffects.None;
             }
         }
 
@@ -143,10 +215,15 @@ namespace Mibar
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
                 if (files != null && files.Length > 0)
                 {
-                    Debug.Write("已经获取到了文件");
-                    // 发送
+                    Debug.WriteLine("已经获取到了文件");
                     SendXiaoMi(files);
                     Debug.WriteLine("已经调用给小米互传");
+                    // Ensure the window is hidden after sending files
+                    Dispatcher.Invoke(() =>
+                    {
+                        Debug.WriteLine("尝试隐藏窗口");
+                        Visibility = Visibility.Collapsed;
+                    });
                 }
             }
         }
@@ -154,7 +231,6 @@ namespace Mibar
         // 使用小米互传发送文件
         private void SendXiaoMi(string[] files)
         {
-            // 调用 SendToXiaomiPcManager 方法
             DllMain.SendToXiaomiPcManager(files);
         }
 
@@ -164,21 +240,19 @@ namespace Mibar
             if (IsDarkThemeEnabled())
             {
                 Debug.WriteLine("当前是暗色主题");
-                // 进行相应的操作，例如切换到暗色主题
                 App.Current.Resources["ForeColor"] = Brushes.Black;
             }
             else
             {
                 Debug.WriteLine("当前是亮色主题");
-                // 进行相应的操作，例如切换到亮色主题
                 App.Current.Resources["ForeColor"] = Brushes.White;
             }
         }
-
-        private void OnFadeOutCompleted(object sender, EventArgs e)
-        {
-            // 动画完成后将窗口设置为 Hidden
-            Visibility = Visibility.Collapsed;
-        }
     }
 }
+
+
+
+
+
+

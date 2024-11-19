@@ -9,11 +9,12 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="SharpHook" Version="5.3.8"/>
-        <PackageReference Include="ShellExtensions" Version="0.0.9"/>
+        <PackageReference Include="EleCho.WpfSuite" Version="0.9.7" />
+        <PackageReference Include="SharpHook" Version="5.3.8" />
+        <PackageReference Include="ShellExtensions" Version="0.0.9" />
     </ItemGroup>
     <ItemGroup>
-        <None Include="C:\Users\123\Desktop\Mibar\.editorconfig"/>
+        <None Include="C:\Users\123\Desktop\Mibar\.editorconfig" />
     </ItemGroup>
 
 </Project>

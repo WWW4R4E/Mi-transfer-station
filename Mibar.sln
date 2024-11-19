@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMibar", "WpfMibar.csproj", "{8BFE018B-33D3-473B-AA82-635D866575F7}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Mi中转站", "..\Mi中转站\Mi中转站.vdproj", "{850E0F94-B77A-423C-A19D-6FCF55BD47C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mibar", "Mibar.csproj", "{8BFE018B-33D3-473B-AA82-635D866575F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +15,6 @@ Global
 		{8BFE018B-33D3-473B-AA82-635D866575F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BFE018B-33D3-473B-AA82-635D866575F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BFE018B-33D3-473B-AA82-635D866575F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{850E0F94-B77A-423C-A19D-6FCF55BD47C7}.Debug|Any CPU.ActiveCfg = Debug
-		{850E0F94-B77A-423C-A19D-6FCF55BD47C7}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

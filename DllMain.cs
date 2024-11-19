@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace WpfMibar
+namespace Mibar
 {
     public static class DllMain
     {

@@ -84,7 +84,7 @@ namespace Mibar
                 short y = e.Data.Y;
 
                 // 检查鼠标是否位于屏幕顶部 
-                if (y <= 100)
+                if (y <= 140)
                 {
                     // 使用 Dispatcher 确保在 UI 线程上更新 Visibility
                     Dispatcher.Invoke(() =>
@@ -166,7 +166,7 @@ namespace Mibar
 
             // 设置窗口的位置在屏幕水平中间的顶部
             Left = (screenWidth - Width) / 2;
-            Top = 0;
+            Top = 20;
 
             // 设置窗口亚力克效果
             EnableAcrylicEffect();

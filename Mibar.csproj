@@ -10,6 +10,9 @@
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="EleCho.WpfSuite" Version="0.9.7" />
+        <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+        <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Win32.SystemEvents" Version="9.0.0" />
         <PackageReference Include="SharpHook" Version="5.3.8" />
         <PackageReference Include="ShellExtensions" Version="0.0.9" />
     </ItemGroup>

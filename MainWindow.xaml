@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ws="https://schemas.elecho.dev/wpfsuite"
-
         ws:WindowOption.Corner="Round"
         xmlns:local="clr-namespace:Mibar"
         mc:Ignorable="d"
@@ -15,7 +14,6 @@
         Foreground="Transparent"
         AllowDrop="True"
         Visibility="Visible">
-            <!-- ws:WindowOption.Backdrop="Acrylic" -->
-    <Grid Background="White" Opacity="0.1">
+    <Grid Background="{DynamicResource ForeColor}" Opacity="0.2">
     </Grid>
 </Window>

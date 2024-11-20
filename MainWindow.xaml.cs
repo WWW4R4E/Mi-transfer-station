@@ -66,13 +66,13 @@ namespace Mibar
 
         private readonly TaskPoolGlobalHook hook; // 全局钩子对象
 
+        private bool _hookEnabled = true; // 钩子默认为开启状态
+
         public MainWindow()
         {
             InitializeComponent();
             // 在加载窗口时执行一些初始化操作
             Loaded += MainWindow_Loaded;
-            // 自行修改颜色主题
-            AutoSwitchThemeMode();
             // 初始化全局键盘钩子
             hook = new TaskPoolGlobalHook(); // 使用TaskPoolGlobalHook以异步处理事件
             // 订阅鼠标拖动事件
@@ -125,33 +125,33 @@ namespace Mibar
         }
 
         // 读取注册表获取是否为深色模式
-        private bool IsDarkThemeEnabled()
-        {
-            try
-            {
-                // 打开注册表键
-                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
-                {
-                    if (key != null)
-                    {
-                        // 读取 "AppsUseLightTheme" 值
-                        object value = key.GetValue("AppsUseLightTheme");
-                        if (value != null)
-                        {
-                            // 如果值为 0，则表示启用了暗色模式
-                            return (int)value == 0;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"检查暗色模式时发生错误: {ex.Message}");
-            }
+        //private bool IsDarkThemeEnabled()
+        //{
+        //    try
+        //    {
+        //        // 打开注册表键
+        //        using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
+        //        {
+        //            if (key != null)
+        //            {
+        //                // 读取 "AppsUseLightTheme" 值
+        //                object value = key.GetValue("AppsUseLightTheme");
+        //                if (value != null)
+        //                {
+        //                    // 如果值为 0，则表示启用了暗色模式
+        //                    return (int)value == 0;
+        //                }
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine($"检查暗色模式时发生错误: {ex.Message}");
+        //    }
 
-            // 默认返回 false，表示未启用暗色模式
-            return false;
-        }
+        //    // 默认返回 false，表示未启用暗色模式
+        //    return false;
+        //}
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
@@ -234,18 +234,47 @@ namespace Mibar
             DllMain.SendToXiaomiPcManager(files);
         }
 
-        private void AutoSwitchThemeMode()
+        //private void AutoSwitchThemeMode()
+        //{
+        //    //检查是否启用了暗色模式
+        //    if (IsDarkThemeEnabled())
+        //    {
+        //        Debug.WriteLine("当前是暗色主题");
+        //        App.Current.Resources["ForeColor"] = Brushes.Black;
+        //    }
+        //    else
+        //    {
+        //        Debug.WriteLine("当前是亮色主题");
+        //        App.Current.Resources["ForeColor"] = Brushes.White;
+        //    }
+        //}
+
+        // 释放进程
+        public void WindowClose()
         {
-            // 检查是否启用了暗色模式
-            if (IsDarkThemeEnabled())
+            hook.Dispose();
+            foreach (Window window in Application.Current.Windows)
             {
-                Debug.WriteLine("当前是暗色主题");
-                App.Current.Resources["ForeColor"] = Brushes.Black;
+                window.Close();
+            }
+
+            // 关闭应用程序
+            Application.Current.Shutdown();
+        }
+        // 切换钩子状态
+        public void ToggleHook()
+        {
+            if (_hookEnabled)
+            {
+                hook.Dispose();
+                _hookEnabled = false;
+                Debug.WriteLine("Hook disabled");
             }
             else
             {
-                Debug.WriteLine("当前是亮色主题");
-                App.Current.Resources["ForeColor"] = Brushes.White;
+                hook.Run();
+                _hookEnabled = true;
+                Debug.WriteLine("Hook enabled");
             }
         }
     }

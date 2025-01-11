@@ -19,7 +19,7 @@
                         ToolTipText="UIToy by Haoyun Qin"
                         DoubleClickCommand="{Binding ShowWindowCommand}"
                         ContextMenu="{StaticResource SysTrayMenu}"
-                        IconSource="C:\Users\123\Desktop\Mibar\XiaomiPcManager.ico">
+                        IconSource="XiaomiPcManager.ico">
                 <tb:TaskbarIcon.DataContext>
                     <mibar:ViewModel/>
                 </tb:TaskbarIcon.DataContext>

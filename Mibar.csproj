@@ -19,5 +19,11 @@
     <ItemGroup>
         <None Include="C:\Users\123\Desktop\Mibar\.editorconfig" />
     </ItemGroup>
+    <ItemGroup>
+      <None Remove="XiaomiPcManager.ico" />
+      <Resource Include="XiaomiPcManager.ico">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
 
 </Project>

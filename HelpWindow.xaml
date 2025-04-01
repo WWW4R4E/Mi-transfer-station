@@ -1,0 +1,17 @@
+<Window x:Class="Mibar.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        Topmost="True"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        AllowDrop="True"
+        Height="35"
+        Top="-20"
+        DragEnter="HelpWindow_DragEnter"
+        Title="HelpWindow">
+</Window>

@@ -22,7 +22,7 @@
                 From="0" To="100" Duration="0:0:0.9" />
             <DoubleAnimation
                 Storyboard.TargetProperty="(Window.Top)"
-                From="-10" To="10" Duration="0:0:0.9" />
+                From="-10" To="0" Duration="0:0:0.9" />
         </Storyboard>
 
         <!-- 隐藏动画（合并后） -->
@@ -34,7 +34,7 @@
                 DecelerationRatio="0.5" />
             <DoubleAnimation
                 Storyboard.TargetProperty="(Window.Top)"
-                From="10" To="-10"
+                From="0" To="-10"
                 Duration="0:0:0.9"
                 DecelerationRatio="0.5" />
         </Storyboard>

@@ -1,29 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <UseWPF>true</UseWPF>
+        <PublishReadyToRun>false</PublishReadyToRun>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Configuration>Release</Configuration>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <OutputType>WinExe</OutputType>
+        <UseWPF>True</UseWPF>
+        <ApplicationIcon>XiaomiPcManager.ico</ApplicationIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <PlatformTarget>x64</PlatformTarget>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="EleCho.WpfSuite" Version="0.9.7" />
-        <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
-        <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
-        <PackageReference Include="Microsoft.Win32.SystemEvents" Version="9.0.0" />
-        <PackageReference Include="SharpHook" Version="5.3.8" />
-        <PackageReference Include="ShellExtensions" Version="0.0.9" />
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="C:\Users\123\Desktop\Mibar\.editorconfig" />
-    </ItemGroup>
-    <ItemGroup>
       <None Remove="XiaomiPcManager.ico" />
-      <Resource Include="XiaomiPcManager.ico">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
     </ItemGroup>
-
+    <ItemGroup>
+        <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="XiaomiPcManager.ico">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
 </Project>

@@ -4,16 +4,43 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ws="https://schemas.elecho.dev/wpfsuite"
-        ws:WindowOption.Corner="Round"
-        xmlns:local="clr-namespace:Mibar"
         mc:Ignorable="d"
         WindowStyle="None"
-        ws:WindowOption.IsDarkMode="True"
+        Height="0"
         AllowsTransparency="True"
-        Background="Transparent"
-        Foreground="Transparent"
         AllowDrop="True"
-        Visibility="Visible">
-    <Grid Background="{DynamicResource ForeColor}" Opacity="0.2">
+        ShowInTaskbar="False"
+        Topmost="True"
+        Background="Transparent"
+        DragLeave="MainWindow_DragLeave"
+        Drop="MainWindow_Drop">
+    <Window.Resources>
+        <!-- 显示动画 -->
+        <Storyboard x:Key="CombinedEmergenceAnimation">
+            <DoubleAnimation
+                Storyboard.TargetProperty="Height"
+                From="0" To="100" Duration="0:0:0.9" />
+            <DoubleAnimation
+                Storyboard.TargetProperty="(Window.Top)"
+                From="-10" To="10" Duration="0:0:0.9" />
+        </Storyboard>
+
+        <!-- 隐藏动画（合并后） -->
+        <Storyboard x:Key="CombinedHideAnimation">
+            <DoubleAnimation
+                Storyboard.TargetProperty="Height"
+                From="100" To="0"
+                Duration="0:0:0.9"
+                DecelerationRatio="0.5" />
+            <DoubleAnimation
+                Storyboard.TargetProperty="(Window.Top)"
+                From="10" To="-10"
+                Duration="0:0:0.9"
+                DecelerationRatio="0.5" />
+        </Storyboard>
+    </Window.Resources>
+
+
+    <Grid AllowDrop="True" Background="#01000000">
     </Grid>
 </Window>

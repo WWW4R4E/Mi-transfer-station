@@ -1,0 +1,12 @@
+C:\Users\123\Desktop\Mi-transfer-station\Misend\bin\Debug\net6.0\Misend.deps.json
+C:\Users\123\Desktop\Mi-transfer-station\Misend\bin\Debug\net6.0\Misend.dll
+C:\Users\123\Desktop\Mi-transfer-station\Misend\bin\Debug\net6.0\Misend.pdb
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\Misend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\Misend.AssemblyInfoInputs.cache
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\Misend.AssemblyInfo.cs
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\Misend.csproj.CoreCompileInputs.cache
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\Misend.sourcelink.json
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\Misend.dll
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\refint\Misend.dll
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\Misend.pdb
+C:\Users\123\Desktop\Mi-transfer-station\Misend\obj\Debug\net6.0\ref\Misend.dll

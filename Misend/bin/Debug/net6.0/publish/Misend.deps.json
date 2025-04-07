@@ -1,0 +1,413 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Misend/1.0.0": {
+        "dependencies": {
+          "PresentationCore": "6.0.2.0"
+        },
+        "runtime": {
+          "Misend.dll": {}
+        }
+      },
+      "PresentationCore/6.0.2.0": {
+        "runtime": {
+          "PresentationCore.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.3624.51603"
+          }
+        },
+        "resources": {
+          "cs/PresentationCore.resources.dll": {
+            "locale": "cs"
+          },
+          "de/PresentationCore.resources.dll": {
+            "locale": "de"
+          },
+          "es/PresentationCore.resources.dll": {
+            "locale": "es"
+          },
+          "fr/PresentationCore.resources.dll": {
+            "locale": "fr"
+          },
+          "it/PresentationCore.resources.dll": {
+            "locale": "it"
+          },
+          "ja/PresentationCore.resources.dll": {
+            "locale": "ja"
+          },
+          "ko/PresentationCore.resources.dll": {
+            "locale": "ko"
+          },
+          "pl/PresentationCore.resources.dll": {
+            "locale": "pl"
+          },
+          "pt-BR/PresentationCore.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ru/PresentationCore.resources.dll": {
+            "locale": "ru"
+          },
+          "tr/PresentationCore.resources.dll": {
+            "locale": "tr"
+          },
+          "zh-Hans/PresentationCore.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "zh-Hant/PresentationCore.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Xaml/6.0.2.0": {
+        "runtime": {
+          "System.Xaml.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.3624.51603"
+          }
+        },
+        "resources": {
+          "cs/System.Xaml.resources.dll": {
+            "locale": "cs"
+          },
+          "de/System.Xaml.resources.dll": {
+            "locale": "de"
+          },
+          "es/System.Xaml.resources.dll": {
+            "locale": "es"
+          },
+          "fr/System.Xaml.resources.dll": {
+            "locale": "fr"
+          },
+          "it/System.Xaml.resources.dll": {
+            "locale": "it"
+          },
+          "ja/System.Xaml.resources.dll": {
+            "locale": "ja"
+          },
+          "ko/System.Xaml.resources.dll": {
+            "locale": "ko"
+          },
+          "pl/System.Xaml.resources.dll": {
+            "locale": "pl"
+          },
+          "pt-BR/System.Xaml.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ru/System.Xaml.resources.dll": {
+            "locale": "ru"
+          },
+          "tr/System.Xaml.resources.dll": {
+            "locale": "tr"
+          },
+          "zh-Hans/System.Xaml.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "zh-Hant/System.Xaml.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "DirectWriteForwarder/6.0.2.0": {
+        "runtime": {
+          "DirectWriteForwarder.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.3624.51603"
+          }
+        }
+      },
+      "UIAutomationTypes/6.0.2.0": {
+        "runtime": {
+          "UIAutomationTypes.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.3624.51603"
+          }
+        },
+        "resources": {
+          "cs/UIAutomationTypes.resources.dll": {
+            "locale": "cs"
+          },
+          "de/UIAutomationTypes.resources.dll": {
+            "locale": "de"
+          },
+          "es/UIAutomationTypes.resources.dll": {
+            "locale": "es"
+          },
+          "fr/UIAutomationTypes.resources.dll": {
+            "locale": "fr"
+          },
+          "it/UIAutomationTypes.resources.dll": {
+            "locale": "it"
+          },
+          "ja/UIAutomationTypes.resources.dll": {
+            "locale": "ja"
+          },
+          "ko/UIAutomationTypes.resources.dll": {
+            "locale": "ko"
+          },
+          "pl/UIAutomationTypes.resources.dll": {
+            "locale": "pl"
+          },
+          "pt-BR/UIAutomationTypes.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ru/UIAutomationTypes.resources.dll": {
+            "locale": "ru"
+          },
+          "tr/UIAutomationTypes.resources.dll": {
+            "locale": "tr"
+          },
+          "zh-Hans/UIAutomationTypes.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "zh-Hant/UIAutomationTypes.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.IO.Packaging/6.0.0.0": {
+        "runtime": {
+          "System.IO.Packaging.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51421"
+          }
+        }
+      },
+      "UIAutomationProvider/6.0.2.0": {
+        "runtime": {
+          "UIAutomationProvider.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.3624.51603"
+          }
+        },
+        "resources": {
+          "cs/UIAutomationProvider.resources.dll": {
+            "locale": "cs"
+          },
+          "de/UIAutomationProvider.resources.dll": {
+            "locale": "de"
+          },
+          "es/UIAutomationProvider.resources.dll": {
+            "locale": "es"
+          },
+          "fr/UIAutomationProvider.resources.dll": {
+            "locale": "fr"
+          },
+          "it/UIAutomationProvider.resources.dll": {
+            "locale": "it"
+          },
+          "ja/UIAutomationProvider.resources.dll": {
+            "locale": "ja"
+          },
+          "ko/UIAutomationProvider.resources.dll": {
+            "locale": "ko"
+          },
+          "pl/UIAutomationProvider.resources.dll": {
+            "locale": "pl"
+          },
+          "pt-BR/UIAutomationProvider.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ru/UIAutomationProvider.resources.dll": {
+            "locale": "ru"
+          },
+          "tr/UIAutomationProvider.resources.dll": {
+            "locale": "tr"
+          },
+          "zh-Hans/UIAutomationProvider.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "zh-Hant/UIAutomationProvider.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/6.0.0.0": {
+        "runtime": {
+          "System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51421"
+          }
+        }
+      },
+      "System.Windows.Input.Manipulations/6.0.2.0": {
+        "runtime": {
+          "System.Windows.Input.Manipulations.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.3624.51603"
+          }
+        },
+        "resources": {
+          "cs/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "cs"
+          },
+          "de/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "de"
+          },
+          "es/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "es"
+          },
+          "fr/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "fr"
+          },
+          "it/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "it"
+          },
+          "ja/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "ja"
+          },
+          "ko/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "ko"
+          },
+          "pl/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "pl"
+          },
+          "pt-BR/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ru/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "ru"
+          },
+          "tr/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "tr"
+          },
+          "zh-Hans/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "zh-Hant/System.Windows.Input.Manipulations.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Windows.Extensions/6.0.0.0": {
+        "runtime": {
+          "System.Windows.Extensions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51421"
+          }
+        }
+      },
+      "System.Security.Permissions/6.0.0.0": {
+        "runtime": {
+          "System.Security.Permissions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51421"
+          }
+        }
+      },
+      "Accessibility/4.0.0.0": {
+        "runtime": {
+          "Accessibility.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.3624.51513"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/6.0.0.0": {
+        "runtime": {
+          "System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51421"
+          }
+        }
+      },
+      "System.Drawing.Common/6.0.0.0": {
+        "runtime": {
+          "System.Drawing.Common.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51421"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.0.0": {
+        "runtime": {
+          "Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51421"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Misend/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PresentationCore/6.0.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xaml/6.0.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DirectWriteForwarder/6.0.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UIAutomationTypes/6.0.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Packaging/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UIAutomationProvider/6.0.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration.ConfigurationManager/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows.Input.Manipulations/6.0.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows.Extensions/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Permissions/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Accessibility/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.ProtectedData/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Drawing.Common/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Win32.SystemEvents/6.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

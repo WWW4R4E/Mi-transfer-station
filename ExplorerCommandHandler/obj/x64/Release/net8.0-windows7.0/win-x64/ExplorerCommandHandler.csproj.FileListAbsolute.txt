@@ -1,0 +1,16 @@
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\bin\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.deps.json
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\bin\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.dll
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\bin\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.pdb
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\bin\x64\Release\net8.0-windows7.0\win-x64\Misend.dll
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\bin\x64\Release\net8.0-windows7.0\win-x64\Misend.pdb
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.csproj.AssemblyReference.cache
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.AssemblyInfoInputs.cache
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.AssemblyInfo.cs
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.csproj.CoreCompileInputs.cache
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.sourcelink.json
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\Explorer.5B2AB8D2.Up2Date
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.dll
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\refint\ExplorerCommandHandler.dll
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ExplorerCommandHandler.pdb
+C:\Users\123\Desktop\Mi-transfer-station\ExplorerCommandHandler\obj\x64\Release\net8.0-windows7.0\win-x64\ref\ExplorerCommandHandler.dll

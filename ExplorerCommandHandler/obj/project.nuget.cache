@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3F/XMmuQ8K4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\123\\Desktop\\Mi-transfer-station\\ExplorerCommandHandler\\ExplorerCommandHandler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\123\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.14\\microsoft.net.illink.tasks.8.0.14.nupkg.sha512",
+    "C:\\Users\\123\\.nuget\\packages\\shellextensions\\0.0.11\\shellextensions.0.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

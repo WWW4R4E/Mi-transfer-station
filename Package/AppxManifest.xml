@@ -29,7 +29,7 @@
                 uap10:RuntimeBehavior="win32App">
       <uap:VisualElements AppListEntry="none" DisplayName="Mitransferstation" Description="Mitransferstation" BackgroundColor="transparent" Square150x150Logo="Images\StoreLogo.png" Square44x44Logo="Images\Square44x44Logo.png"> </uap:VisualElements>
       <Extensions>
-    <desktop:Extension Category="windows.startupTask" Executable="Mibar\Mibar.exe" EntryPoint="Windows.FullTrustApplication">
+    <desktop:Extension Category="windows.startupTask" Executable="Mibar.exe" EntryPoint="Windows.FullTrustApplication">
       <desktop:StartupTask TaskId="Mibar" Enabled="true" DisplayName="Mibar" />
     </desktop:Extension>
         <desktop4:Extension Category="windows.fileExplorerContextMenus">
@@ -50,19 +50,12 @@
             <com:SurrogateServer DisplayName="Mishare">
               <com:Class
                 Id="D32D42C1-682D-440F-A323-82D5B5D84B67"
-                Path="ExplorerCommandHandler\ExplorerCommandHandler.dll"
+                Path="ExplorerCommandHandler.dll"
                 ThreadingModel="STA" />
             </com:SurrogateServer>
           </com:ComServer>
         </com:Extension>
       </Extensions>
     </Application>
-<!-- <Application Id="Mibar"
-             uap10:TrustLevel="mediumIL"
-             uap10:RuntimeBehavior="win32App">
-  <uap:VisualElements AppListEntry="default" DisplayName="Mibar" 
-  Description="Mibar" BackgroundColor="transparent" Square150x150Logo="Images\StoreLogo.png" Square44x44Logo="Images\Square44x44Logo.png" /> -->
-
-<!-- </Application> -->
   </Applications>
 </Package>

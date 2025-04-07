@@ -1,4 +1,5 @@
-﻿using ShellExtensions;
+﻿using System.Linq;
+using ShellExtensions;
 using ShellExtensions.Helpers;
 using Misend;
 namespace ExplorerCommandHandler

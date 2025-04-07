@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType> 
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>x64</Platforms>
+    <TargetFramework>net8.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <!--<Optimize>true</Optimize>
+     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+      <OptimizationPreference>Size</OptimizationPreference>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EleCho.WpfSuite" Version="0.10.7" />
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExplorerCommandHandler\ExplorerCommandHandler.csproj" />
+  </ItemGroup>
+</Project>

@@ -8,7 +8,7 @@ namespace Mibar
     {
         public event EventHandler CanExecuteChanged;
         public bool CanExecute(object parameter) => true;
-        public void Execute(object parameter) 
+        public void Execute(object parameter)
         {
             Application.Current.Shutdown();
         }

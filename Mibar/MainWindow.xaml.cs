@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EleCho.WpfSuite.Helpers;
+using ExplorerCommandHandler;
+using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows;
@@ -9,6 +11,7 @@ namespace Mibar
 {
     public partial class MainWindow : Window
     {
+        
         [DllImport("user32.dll")]
         private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
 
@@ -69,6 +72,10 @@ namespace Mibar
             Left = (screenWidth - Width) / 2;
             Top = -10;
             Visibility = Visibility.Hidden;
+            // 启用圆角效果
+            WindowOption.SetCorner(this, WindowCorner.Round);
+           
+            // 启用Acrylic效果
             EnableAcrylicEffect();
         }
 
@@ -122,7 +129,7 @@ namespace Mibar
         // 使用小米互传发送文件
         private void SendXiaoMi(string[] files)
         {
-            DllMain.SendToXiaomiPcManager(files);
+           Misend.DllMain.SendToXiaomiPcManager(files);
         }
 
         private void MainWindow_DragLeave(object sender, DragEventArgs e)

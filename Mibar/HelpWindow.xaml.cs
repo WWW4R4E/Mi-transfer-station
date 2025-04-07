@@ -52,7 +52,7 @@ namespace Mibar
             SetWindowLong(hwnd, GWL_EXSTYLE, extendedStyle | WS_EX_TOOLWINDOW);
 
             double screenWidth = SystemParameters.PrimaryScreenWidth;
-            Width = screenWidth / 2;
+            Width = screenWidth / 3;
             Left = (screenWidth - Width) / 2;
         }
 

@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ws="https://schemas.elecho.dev/wpfsuite"
+        ws:WindowOption.Corner="Round"
         mc:Ignorable="d"
         WindowStyle="None"
         Height="0"
@@ -19,10 +20,18 @@
         <Storyboard x:Key="CombinedEmergenceAnimation">
             <DoubleAnimation
                 Storyboard.TargetProperty="Height"
-                From="0" To="100" Duration="0:0:0.9" />
+                From="0" To="100" Duration="0:0:0.3" >
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase EasingMode="EaseIn" /> 
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
             <DoubleAnimation
                 Storyboard.TargetProperty="(Window.Top)"
-                From="-10" To="0" Duration="0:0:0.9" />
+                From="-10" To="0" Duration="0:0:0.6" >
+                <DoubleAnimation.EasingFunction>
+                    <ExponentialEase EasingMode="EaseIn" /> 
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
         </Storyboard>
 
         <!-- 隐藏动画（合并后） -->
@@ -30,17 +39,19 @@
             <DoubleAnimation
                 Storyboard.TargetProperty="Height"
                 From="100" To="0"
-                Duration="0:0:0.9"
-                DecelerationRatio="0.5" />
+                Duration="0:0:0.3"
+                DecelerationRatio="0.6" />
             <DoubleAnimation
                 Storyboard.TargetProperty="(Window.Top)"
                 From="0" To="-10"
-                Duration="0:0:0.9"
-                DecelerationRatio="0.5" />
+                Duration="0:0:0.6"
+                DecelerationRatio="0.9" />
         </Storyboard>
+        
+        <Style TargetType="Border" x:Key="RoundBorder">
+            <Setter Property="CornerRadius" Value="10" />
+        </Style>
     </Window.Resources>
-
-
     <Grid AllowDrop="True" Background="#01000000">
     </Grid>
 </Window>

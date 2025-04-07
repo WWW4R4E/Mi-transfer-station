@@ -1,4 +1,0 @@
-EXPORTS
-   DotNetRuntimeDebugHeader DATA
-   DllCanUnloadNow
-   DllGetClassObject

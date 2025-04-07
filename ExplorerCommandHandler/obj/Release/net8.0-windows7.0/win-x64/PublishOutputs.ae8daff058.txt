@@ -1,4 +1,0 @@
-C:\Users\123\Desktop\Mi-transfer-station\Mi-transfer-station(package)\ExplorerCommandHandler\ExplorerCommandHandler.dll
-C:\Users\123\Desktop\Mi-transfer-station\Mi-transfer-station(package)\ExplorerCommandHandler\ExplorerCommandHandler.deps.json
-C:\Users\123\Desktop\Mi-transfer-station\Mi-transfer-station(package)\ExplorerCommandHandler\ExplorerCommandHandler.pdb
-C:\Users\123\Desktop\Mi-transfer-station\Mi-transfer-station(package)\ExplorerCommandHandler\ShellExtensions.dll

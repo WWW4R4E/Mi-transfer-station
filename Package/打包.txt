@@ -1,0 +1,6 @@
+打包方法,将mibar的生成文件放入该项目,如何执行下面的命令
+
+
+makeappx.exe pack /d "..\Package" /p "..\Mi-transfer-station.msix"
+
+signtool.exe sign /fd SHA256 /a /f ".\Mi-transfer-station(package)_TemporaryKey.pfx" /td SHA256 /v "..\Mi-transfer-station.msix"

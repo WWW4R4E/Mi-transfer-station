@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <!--<Optimize>true</Optimize>
+    <Optimize>true</Optimize>
      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-      <OptimizationPreference>Size</OptimizationPreference>-->
+      <OptimizationPreference>Size</OptimizationPreference>
   </PropertyGroup>
 
   <ItemGroup>

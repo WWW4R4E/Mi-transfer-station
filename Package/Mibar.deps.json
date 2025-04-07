@@ -1,0 +1,253 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Mibar/1.0.0": {
+        "dependencies": {
+          "EleCho.WpfSuite": "0.10.7",
+          "ExplorerCommandHandler": "1.0.0",
+          "Hardcodet.NotifyIcon.Wpf": "2.0.1"
+        },
+        "runtime": {
+          "Mibar.dll": {}
+        }
+      },
+      "EleCho.WpfSuite/0.10.7": {
+        "dependencies": {
+          "EleCho.WpfSuite.Common": "0.9.6",
+          "EleCho.WpfSuite.Controls": "0.10.7",
+          "EleCho.WpfSuite.Helpers": "0.9.5",
+          "EleCho.WpfSuite.Input": "0.9.1",
+          "EleCho.WpfSuite.Layouts": "0.9.1",
+          "EleCho.WpfSuite.Markup": "0.9.0",
+          "EleCho.WpfSuite.Media": "0.9.4",
+          "EleCho.WpfSuite.ValueConverters": "0.9.4"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.dll": {
+            "assemblyVersion": "0.10.7.0",
+            "fileVersion": "0.10.7.0"
+          }
+        }
+      },
+      "EleCho.WpfSuite.Common/0.9.6": {
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.Common.dll": {
+            "assemblyVersion": "0.9.6.0",
+            "fileVersion": "0.9.6.0"
+          }
+        },
+        "resources": {
+          "lib/net8.0-windows7.0/zh-Hans/EleCho.WpfSuite.Common.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "EleCho.WpfSuite.Controls/0.10.7": {
+        "dependencies": {
+          "EleCho.WpfSuite.Helpers": "0.9.5",
+          "EleCho.WpfSuite.Input": "0.9.1",
+          "EleCho.WpfSuite.Media": "0.9.4",
+          "EleCho.WpfSuite.ValueConverters": "0.9.4"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.Controls.dll": {
+            "assemblyVersion": "0.10.7.0",
+            "fileVersion": "0.10.7.0"
+          }
+        }
+      },
+      "EleCho.WpfSuite.Helpers/0.9.5": {
+        "dependencies": {
+          "EleCho.WpfSuite.Common": "0.9.6"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.Helpers.dll": {
+            "assemblyVersion": "0.9.5.0",
+            "fileVersion": "0.9.5.0"
+          }
+        }
+      },
+      "EleCho.WpfSuite.Input/0.9.1": {
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.Input.dll": {
+            "assemblyVersion": "0.9.1.0",
+            "fileVersion": "0.9.1.0"
+          }
+        }
+      },
+      "EleCho.WpfSuite.Layouts/0.9.1": {
+        "dependencies": {
+          "EleCho.WpfSuite.Common": "0.9.6"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.Layouts.dll": {
+            "assemblyVersion": "0.9.1.0",
+            "fileVersion": "0.9.1.0"
+          }
+        }
+      },
+      "EleCho.WpfSuite.Markup/0.9.0": {
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.Markup.dll": {
+            "assemblyVersion": "0.9.0.0",
+            "fileVersion": "0.9.0.0"
+          }
+        }
+      },
+      "EleCho.WpfSuite.Media/0.9.4": {
+        "dependencies": {
+          "EleCho.WpfSuite.Common": "0.9.6"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.Media.dll": {
+            "assemblyVersion": "0.9.4.0",
+            "fileVersion": "0.9.4.0"
+          }
+        }
+      },
+      "EleCho.WpfSuite.ValueConverters/0.9.4": {
+        "runtime": {
+          "lib/net8.0-windows7.0/EleCho.WpfSuite.ValueConverters.dll": {
+            "assemblyVersion": "0.9.4.0",
+            "fileVersion": "0.9.4.0"
+          }
+        }
+      },
+      "Hardcodet.NotifyIcon.Wpf/2.0.1": {
+        "runtime": {
+          "lib/net8.0-windows7.0/Hardcodet.NotifyIcon.Wpf.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.1.2717"
+          }
+        }
+      },
+      "ShellExtensions/0.0.11": {
+        "runtime": {
+          "lib/net8.0-windows7.0/ShellExtensions.dll": {
+            "assemblyVersion": "0.0.11.0",
+            "fileVersion": "0.0.11.0"
+          }
+        }
+      },
+      "ExplorerCommandHandler/1.0.0": {
+        "dependencies": {
+          "Misend": "1.0.0",
+          "ShellExtensions": "0.0.11"
+        },
+        "runtime": {
+          "ExplorerCommandHandler.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Misend/1.0.0": {
+        "runtime": {
+          "Misend.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mibar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EleCho.WpfSuite/0.10.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gwLXByP63XBMRZ1XCpiA1N5INxLtmrI7W76PGg62c2RhrJxC7Rqg51AOlnWVIrnmPxhxs2KI4DmTE1+IEyd4cQ==",
+      "path": "elecho.wpfsuite/0.10.7",
+      "hashPath": "elecho.wpfsuite.0.10.7.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.Common/0.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vbDE5ADnyuifoj3nw64mKIjNCY73KSvO4gAuhSoeT22e1pUqPq91hhVMjuvsmmDacSouHoMMu6NkxcY1PUz8tA==",
+      "path": "elecho.wpfsuite.common/0.9.6",
+      "hashPath": "elecho.wpfsuite.common.0.9.6.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.Controls/0.10.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-simTgnRpb3fLgj9tihIjwMUrFhvoa6s7gvXhn432PMNR17ZZ2NoYJR90msfPxSl+0WDMpme6ND3Xw2WTEsh28A==",
+      "path": "elecho.wpfsuite.controls/0.10.7",
+      "hashPath": "elecho.wpfsuite.controls.0.10.7.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.Helpers/0.9.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qWkol4xCZeVKjf7DnD9Z+C0q3i4E76Kf7kgLRoCF+rz+n6S1pGzGYXWHzsEUTqPTzxKTUKIPkStp6lkcTO/hGg==",
+      "path": "elecho.wpfsuite.helpers/0.9.5",
+      "hashPath": "elecho.wpfsuite.helpers.0.9.5.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.Input/0.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-19gmqSmOP4060GHM+vpvr0B4T8P+NXM1yWToDjO+feI+ESChYz0am38PeoN3dm7mC5bM2c7Gi0WsI+qmVYw3NA==",
+      "path": "elecho.wpfsuite.input/0.9.1",
+      "hashPath": "elecho.wpfsuite.input.0.9.1.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.Layouts/0.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uKnmGfIzYlbBId7YaEUmEJ3xfrorga0gYaKaS8O11JDZ+HHSTx24Q/EH5uzLdYvQnC/ykXY5xBHQA5iPHRuC5Q==",
+      "path": "elecho.wpfsuite.layouts/0.9.1",
+      "hashPath": "elecho.wpfsuite.layouts.0.9.1.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.Markup/0.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c6eqT6Ps02YFZsnpnQbK3eybCpi2PocQRlcXl3oTcLAY9TBohQhbCmJsR/BEbBizmoV6fp6xLH/idcpHLfKOCw==",
+      "path": "elecho.wpfsuite.markup/0.9.0",
+      "hashPath": "elecho.wpfsuite.markup.0.9.0.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.Media/0.9.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WtEJUCV3dpHdMwRbu3Oxmpw7lkKOQk6oVjC/10zp/VNnFBquroUJykdZdqjeRjFvQC6mkd3uRSKtWyAMMaM+Yg==",
+      "path": "elecho.wpfsuite.media/0.9.4",
+      "hashPath": "elecho.wpfsuite.media.0.9.4.nupkg.sha512"
+    },
+    "EleCho.WpfSuite.ValueConverters/0.9.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-616fwtSxabPY355LN5BOU+LlTdtU2Fy7M3pmgaNK85SZsUcj5+sOI6aPg3ihjhg69ROltQoqXAn7JKRCEd2wZA==",
+      "path": "elecho.wpfsuite.valueconverters/0.9.4",
+      "hashPath": "elecho.wpfsuite.valueconverters.0.9.4.nupkg.sha512"
+    },
+    "Hardcodet.NotifyIcon.Wpf/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dtxmeZXzV2GzSm91aZ3hqzgoeVoARSkDPVCYfhVUNyyKBWYxMgNC0EcLiSYxD4Uc4alq/2qb3SmV8DgAENLRLQ==",
+      "path": "hardcodet.notifyicon.wpf/2.0.1",
+      "hashPath": "hardcodet.notifyicon.wpf.2.0.1.nupkg.sha512"
+    },
+    "ShellExtensions/0.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oZ3im2vFmx4jkcjTRPBObq+KeMoaR7RtTiIu8Vwngljs8GA+DLxHoJ8bIiXkOxEVkpEfp5OTKl3xFrzsIZGmQA==",
+      "path": "shellextensions/0.0.11",
+      "hashPath": "shellextensions.0.0.11.nupkg.sha512"
+    },
+    "ExplorerCommandHandler/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Misend/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

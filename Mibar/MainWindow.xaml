@@ -20,21 +20,21 @@
         <Storyboard x:Key="CombinedEmergenceAnimation">
             <DoubleAnimation
                 Storyboard.TargetProperty="Height"
-                From="0" To="100" Duration="0:0:0.3" >
+                From="0" To="100" Duration="0:0:0.3">
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn" /> 
+                    <ExponentialEase EasingMode="EaseIn" />
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
             <DoubleAnimation
                 Storyboard.TargetProperty="(Window.Top)"
-                From="-10" To="0" Duration="0:0:0.6" >
+                From="-10" To="0" Duration="0:0:0.6">
                 <DoubleAnimation.EasingFunction>
-                    <ExponentialEase EasingMode="EaseIn" /> 
+                    <ExponentialEase EasingMode="EaseIn" />
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
 
-        <!-- 隐藏动画（合并后） -->
+        <!-- 隐藏动画 -->
         <Storyboard x:Key="CombinedHideAnimation">
             <DoubleAnimation
                 Storyboard.TargetProperty="Height"
@@ -47,10 +47,6 @@
                 Duration="0:0:0.6"
                 DecelerationRatio="0.9" />
         </Storyboard>
-        
-        <Style TargetType="Border" x:Key="RoundBorder">
-            <Setter Property="CornerRadius" Value="10" />
-        </Style>
     </Window.Resources>
     <Grid AllowDrop="True" Background="#01000000">
     </Grid>

@@ -51,14 +51,14 @@ namespace Mibar
         [DllImport("user32.dll")]
         private static extern int SetWindowCompositionAttribute(IntPtr hwnd, ref WINDOWCOMPOSITIONATTRIBDATA data);
 
-        private HelpWindow _helpWindow;
+        public HelpWindow HelpWindow;
 
         public MainWindow()
         {
             InitializeComponent();
             Loaded += MainWindow_Loaded;
-            _helpWindow = new HelpWindow(this);
-            _helpWindow.Show();
+            HelpWindow = new HelpWindow(this);
+            HelpWindow.Show();
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)

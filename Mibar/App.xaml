@@ -8,7 +8,13 @@
         <ResourceDictionary>
             <ContextMenu x:Key="SysTrayMenu">
                 <MenuItem Header="退出" 
-                          Command="{Binding ExitApplicationCommand}"/>
+                          Command="{Binding ExitApplicationCommand }"/>
+                <!-- <MenuItem Header="降低窗口" -->
+                <!--           Command="{Binding AdjustHeightCommand}" -->
+                <!--           IsChecked="{Binding AdjustHeightChecked, Mode=OneWay }"/> -->
+                <MenuItem Header="启用窗口"
+                          Command="{Binding ToggleWindowEnabledCommand}"
+                          IsChecked="{Binding ToggleWindowEnabledChecked,Mode=OneWay}"/>
             </ContextMenu>
             <tb:TaskbarIcon x:Key="Taskbar"
                 ToolTipText="MiBar"

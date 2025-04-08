@@ -54,6 +54,7 @@ namespace Mibar
             double screenWidth = SystemParameters.PrimaryScreenWidth;
             Width = screenWidth / 3;
             Left = (screenWidth - Width) / 2;
+            this.Visibility = Properties.Settings.Default.show ? Visibility.Visible : Visibility.Hidden;
         }
 
         private async void HelpWindow_DragEnter(object sender, DragEventArgs e)

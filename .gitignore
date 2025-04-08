@@ -32,3 +32,4 @@ _ReSharper.*
 *.dll
 *.exe
 *.pdb
+Package/Mibar.dll.config

@@ -1,7 +1,3 @@
-好的，以下是润色后的 Markdown 内容：
-
----
-
 # Mi-transfer-station
 
 作为小米电脑管家的互传中转站，本项目致力于优化 Windows 11 系统中通过右键菜单使用小米互传时等待菜单加载的不佳体验，以及通过打开小米电脑管家进行互传的繁琐操作。感谢 [MiDropShellExtForWindows11](https://github.com/cnbluefire/MiDropShellExtForWindows11) 项目提供的小米互传调用方法。

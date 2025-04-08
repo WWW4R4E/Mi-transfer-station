@@ -2,7 +2,7 @@
 
 作为小米电脑管家的互传中转站，本项目致力于优化 Windows 11 系统中通过右键菜单使用小米互传时等待菜单加载的不佳体验，以及通过打开小米电脑管家进行互传的繁琐操作。感谢 [MiDropShellExtForWindows11](https://github.com/cnbluefire/MiDropShellExtForWindows11) 项目提供的小米互传调用方法。
 
-- **小米互传 Win11 右键菜单支持**：将小米互传功能集成到 Windows 11 系统右键菜单中，显著提升文件传输的便捷性。
+- **小米互传 Win11 右键菜单支持**：将小米互传功能集成到 Windows 11 系统右键菜单中，显著提升文件传输的便捷性。(目前我电脑上1.6.2已经无法正常使用,还没有找到原因,泪目了因为是小小修改我直接覆盖了1.6变成1.6.2了,所以我连1.6的包都没了,由于我的初衷就是为了取代这玩意所以才做了个中转站,所以这个不一定后续会修了,等我有机会深入cpp/winrt的话会重新搞这个吧)
 
 ## 重要说明
 
@@ -16,8 +16,8 @@
 
 2. **图标文件要求**  
    需确保以下资源文件存在：
-   - `midrop_logo.ico`
-   - `NotifyIcon.ico`  
+   - `midrop_logo.ico` (win11新右键菜单图标)
+   - `NotifyIcon.ico`  (系统托盘图标)
    路径示例：
    ```plaintext
    C:\Program Files\MI\XiaomiPCManager\5.3.0.328\Assets\ 

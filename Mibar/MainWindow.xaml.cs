@@ -1,5 +1,4 @@
 ﻿using EleCho.WpfSuite.Helpers;
-using ExplorerCommandHandler;
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;

@@ -5,20 +5,44 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Platforms>x64</Platforms>
     <TargetFramework>net8.0-windows</TargetFramework>
+    <Configurations>Release</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <Optimize>true</Optimize>
      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
       <OptimizationPreference>Size</OptimizationPreference>
+      <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+      <SelfContained>False</SelfContained>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="EleCho.WpfSuite" Version="0.10.7" />
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ExplorerCommandHandler\ExplorerCommandHandler.csproj" />
+    <ProjectReference Include="..\Misend\Misend.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="NotifyIcon.ico" />
+    <Resource Include="NotifyIcon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 </Project>

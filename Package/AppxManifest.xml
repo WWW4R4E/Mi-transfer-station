@@ -3,7 +3,7 @@
   <Identity
     Name="Mitransferstation"
     Publisher="CN=WWW4R4E"
-    Version="1.6.2.0"
+    Version="1.6.0.0"
     ProcessorArchitecture="x64" />
 
   <Properties>
@@ -31,7 +31,7 @@
       <Extensions>
     <desktop:Extension Category="windows.startupTask" Executable="Mibar.exe" EntryPoint="Windows.FullTrustApplication">
       <desktop:StartupTask TaskId="Mibar" Enabled="true" DisplayName="Mibar" />
-    </desktop:Extension>
+    <!-- </desktop:Extension>
         <desktop4:Extension Category="windows.fileExplorerContextMenus">
           <desktop4:FileExplorerContextMenus>
             <desktop4:ItemType Type="*">
@@ -50,11 +50,11 @@
             <com:SurrogateServer DisplayName="Mishare">
               <com:Class
                 Id="D32D42C1-682D-440F-A323-82D5B5D84B67"
-                Path="ExplorerCommandHandler.dll"
+                Path="DropContextMenuExt.dll"
                 ThreadingModel="STA" />
             </com:SurrogateServer>
           </com:ComServer>
-        </com:Extension>
+        </com:Extension> -->
       </Extensions>
     </Application>
   </Applications>

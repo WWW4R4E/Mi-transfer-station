@@ -19,7 +19,7 @@
             <tb:TaskbarIcon x:Key="Taskbar"
                 ToolTipText="MiBar"
                 ContextMenu="{StaticResource SysTrayMenu}"
-                IconSource="C:\Program Files\MI\XiaomiPCManager\5.3.0.328\Assets\NotifyIcon.ico">
+                IconSource="pack://application:,,,/NotifyIcon.ico">
             <tb:TaskbarIcon.DataContext>
                 <mibar:MenuCommand/>
             </tb:TaskbarIcon.DataContext>

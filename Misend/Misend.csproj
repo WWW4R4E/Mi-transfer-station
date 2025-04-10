@@ -5,7 +5,17 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <Platforms>AnyCPU;x64</Platforms>
+        <Platforms>x64</Platforms>
+        <Configurations>Release</Configurations>
+
     </PropertyGroup>
+    	<PropertyGroup>
+		<PublishAot>true</PublishAot>
+		<InvariantGlobalization>true</InvariantGlobalization>
+		<StaticallyLinked>true</StaticallyLinked>
+		<OptimizationPreference>Size</OptimizationPreference>
+		<IlcGenerateMstatFile>false</IlcGenerateMstatFile>
+		<IlcGenerateDgmlFile>false</IlcGenerateDgmlFile>
+	</PropertyGroup>
 
 </Project>

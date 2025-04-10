@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mibar", "Mibar\Mibar.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misend", "Misend\Misend.csproj", "{667FF15B-0A51-48C8-BE68-7623E034F46E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CecilDll", "CecilDll\CecilDll.csproj", "{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,26 @@ Global
 		{667FF15B-0A51-48C8-BE68-7623E034F46E}.Release|x64.Build.0 = Release|x64
 		{667FF15B-0A51-48C8-BE68-7623E034F46E}.Release|x86.ActiveCfg = Release|x64
 		{667FF15B-0A51-48C8-BE68-7623E034F46E}.Release|x86.Build.0 = Release|x64
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|x64.Build.0 = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|ARM.Build.0 = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|ARM64.Build.0 = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|x64.ActiveCfg = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|x64.Build.0 = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{EC8F428E-1483-4CD6-8D2B-93EDE8CD35F3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

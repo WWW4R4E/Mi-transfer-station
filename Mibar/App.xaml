@@ -15,6 +15,9 @@
                 <MenuItem Header="启用窗口"
                           Command="{Binding ToggleWindowEnabledCommand}"
                           IsChecked="{Binding ToggleWindowEnabledChecked,Mode=OneWay}"/>
+                <MenuItem Header="启用兼容性增强"
+                          Command="{Binding AdjustHeightCommand}"
+                          IsChecked="{Binding AdjustHeightChecked,Mode=OneWay}"/>
             </ContextMenu>
             <tb:TaskbarIcon x:Key="Taskbar"
                 ToolTipText="MiBar"

@@ -10,8 +10,8 @@
         ResizeMode="NoResize"
         ShowInTaskbar="False"
         AllowDrop="True"
-        Height="20"
-        Top="-5"
+        Height="5"
+        Top="0"
         DragEnter="HelpWindow_DragEnter"
         Title="HelpWindow" d:DataContext="{d:DesignInstance  }">
 </Window>

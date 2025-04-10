@@ -56,8 +56,10 @@ namespace Mibar
         {
             InitializeComponent();
             Loaded += MainWindow_Loaded;
+            Closing += (s, e) => Application.Current.Shutdown();
             HelpWindow = new HelpWindow(this);
             HelpWindow.Show();
+            
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)

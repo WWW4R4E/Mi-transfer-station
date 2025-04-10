@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" xmlns:desktop4="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4" xmlns:desktop5="http://schemas.microsoft.com/appx/manifest/desktop/windows10/5" xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10" xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10" IgnorableNamespaces="uap uap2 uap3 rescap desktop desktop4 desktop5 uap10 com">
-  <Identity
-    Name="Mitransferstation"
-    Publisher="CN=WWW4R4E"
-    Version="1.6.0.0"
-    ProcessorArchitecture="x64" />
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+         xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+         IgnorableNamespaces="uap rescap desktop">
+  <Identity Name="Mi-transfer-station.package"
+            Publisher="CN=WWW4R4E"
+            Version="1.7.0.0" />
 
   <Properties>
-    <DisplayName>Mitransferstation</DisplayName>
+    <DisplayName>Mibar</DisplayName>
     <PublisherDisplayName>WWW4R4E</PublisherDisplayName>
-    <Logo>Images\StoreLogo.png</Logo>
+    <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
@@ -20,42 +22,27 @@
 
   <Capabilities>
     <rescap:Capability Name="runFullTrust"/>
-    <rescap:Capability Name="unvirtualizedResources"/>
   </Capabilities>
 
   <Applications>
-    <Application Id="Mitransferstation"
-                uap10:TrustLevel="mediumIL"
-                uap10:RuntimeBehavior="win32App">
-      <uap:VisualElements AppListEntry="none" DisplayName="Mitransferstation" Description="Mitransferstation" BackgroundColor="transparent" Square150x150Logo="Images\StoreLogo.png" Square44x44Logo="Images\Square44x44Logo.png"> </uap:VisualElements>
+    <Application Id="App"
+                 Executable="Mibar.exe"
+                 EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Mibar"
+                          Description="Mibar Application"
+                          BackgroundColor="transparent"
+                          Square150x150Logo="Assets\Square150x150Logo.png"
+                          Square44x44Logo="Assets\Square44x44Logo.png">
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
       <Extensions>
-    <desktop:Extension Category="windows.startupTask" Executable="Mibar.exe" EntryPoint="Windows.FullTrustApplication">
-      <desktop:StartupTask TaskId="Mibar" Enabled="true" DisplayName="Mibar" />
-    <!-- </desktop:Extension>
-        <desktop4:Extension Category="windows.fileExplorerContextMenus">
-          <desktop4:FileExplorerContextMenus>
-            <desktop4:ItemType Type="*">
-              <desktop4:Verb Id="DropContextMenuExt" 
-                            Clsid="D32D42C1-682D-440F-A323-82D5B5D84B67"/>
-            </desktop4:ItemType>
-            <desktop5:ItemType Type="Directory">
-              <desktop5:Verb Id="DropContextMenuExt" 
-                            Clsid="D32D42C1-682D-440F-A323-82D5B5D84B67"/>
-            </desktop5:ItemType>
-          </desktop4:FileExplorerContextMenus>
-        </desktop4:Extension>
-
-        <com:Extension Category="windows.comServer">
-          <com:ComServer>
-            <com:SurrogateServer DisplayName="Mishare">
-              <com:Class
-                Id="D32D42C1-682D-440F-A323-82D5B5D84B67"
-                Path="DropContextMenuExt.dll"
-                ThreadingModel="STA" />
-            </com:SurrogateServer>
-          </com:ComServer>
-        </com:Extension> -->
+        <desktop:Extension Category="windows.startupTask" Executable="Mibar.exe" EntryPoint="Windows.FullTrustApplication">
+          <desktop:StartupTask TaskId="MibarStartup" Enabled="true" DisplayName="Mibar Startup" />
+        </desktop:Extension>
       </Extensions>
     </Application>
   </Applications>
+
+
+
 </Package>

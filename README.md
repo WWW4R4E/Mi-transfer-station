@@ -32,6 +32,6 @@
 请随时反馈，我将尽力提供修复支持。
 
 ## 效果展示
-![image](Screenshot 2025-04-11 020331.png)
+![image](Screenshot.png)
 
 
